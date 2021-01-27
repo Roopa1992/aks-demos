@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: roopaaksdemos 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: roopaaksdemos
+  template:
+    metadata:
+      labels:
+        app: roopaaksdemos 
+    spec:
+      containers:
+        - name: roopaaksdemos 
+          image: akstraining5.azurecr.io/roopaaksdemos
+          ports:
+          - containerPort: 80
