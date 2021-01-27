@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '2223c416-d3a6-4ff5-b0e4-31062cd637df'
   imageRepository: 'roopaaksdemos'
   containerRegistry: 'akstraining5.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'dockertraining/app/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'akstraining5e65d-auth'
 
